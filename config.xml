@@ -2,8 +2,8 @@
  <widget xmlns   = "http://www.w3.org/ns/widgets"
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         id          = "edu.mccneb.scd"
-        versionCode = "10" 
-        version     = "1.11.7" >
+        versionCode = "1" 
+        version     = "1.11.15" >
 
     <!-- versionCode is optional and Android only -->
 
@@ -76,6 +76,7 @@
     <!--
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
+		<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.5.0" />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
