@@ -16,7 +16,7 @@
     <author href="https://build.phonegap.com" email="abrownii@mccneb.edu">
         Art Brown 
     </author>
-
+	
 	<gap:platform name="ios" />
 	<gap:platform name="android" />
 	<gap:platform name="winphone" />
@@ -79,7 +79,7 @@
         <gap:plugin name="com.phonegap.plugins.barcodescanner" />
     -->
 		
-
+	
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
     <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
@@ -108,11 +108,11 @@
     <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
     <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
     <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" />
-
+	
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
     <string>100</string>
     </gap:config-file>
-
+	
     <!--
         Define access to external domains.
         <access />            - a blank access tag denies access to all external resources.
@@ -137,11 +137,9 @@
 	<!-- <access origin="content:///*" /> -->
 
 	<!-- Don't block any requests -->
-	<!-- <access origin="*" /> -->
-	<!-- <access origin="*"/> <!-- allow all pages, use for development -->
-	<!-- <access origin="*.pushwoosh.com"/> <!-- allow pushwoosh service -->
+	<access origin="*" />
 	
-	
+
 
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
