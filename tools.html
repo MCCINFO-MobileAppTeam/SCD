@@ -12,6 +12,12 @@
 		<script src="jquery-1.11.3.min.js"></script>
 		<script src="jquery.mobile-1.4.5.min.js"></script> 
 		<script src="phonegap.js"></script>
+		<script>
+		function openURL(urlString){
+		myURL = encodeURI(urlString);
+		window.open(myURL, '_blank');
+		}
+		</script>
 	</head>
 
 
@@ -19,8 +25,8 @@
 <!--  
      Amy Burke
      tools.html
-     Sarpy County Dems mobile app
-     8/22/15
+     Sarpy County Democrats Mobile Web Application
+	 Revised: 12.01.15
 -->
 
 <div data-role="page"  class="homepage">
@@ -35,7 +41,7 @@
 
     <h2>Election Tools</h2>
 <ul>
-<li> <a href="https://www.nebraska.gov/apps-sos-voter-registration/">Online Voter Registration</a></li>
+<li> <a href="#" onclick='openURL("https://www.nebraska.gov/apps-sos-voter-registration/")/>Online Voter Registration</a></li>
 <li> <a href="https://www.votercheck.necvr.ne.gov/">Check Your Voter Registration</a></li>
 <li> <a href="http://www.sarpy.com/election/maps.html">Maps</a></li>
 <li> <a href="http://www.sos.ne.gov/elec/voter_info.html">Voter Information Frequently Asked Questions</a></li>
